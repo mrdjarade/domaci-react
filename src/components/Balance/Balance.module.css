@@ -1,6 +1,6 @@
 .balance-container {
-  width: 50%;
-  margin: 30px 25%;
+  width: 40%;
+  margin: 30px 30%;
   background-color: white;
   padding: 30px;
 }
@@ -13,7 +13,15 @@
 .balance-container--cards {
   display: flex;
   justify-content: space-between;
-  padding: 20px 80px 0 80px;
+  margin-top: 30px;
+}
+
+.income {
+  color: green;
+}
+
+.expense {
+  color: #b80202;
 }
 
 .balance-container--cards > div > p {

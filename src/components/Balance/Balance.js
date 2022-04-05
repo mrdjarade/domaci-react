@@ -9,11 +9,11 @@ const Balance = (props) => {
       <div className={classes["balance-container--cards"]}>
         <div>
           <h2 className={classes.heading}>Prihodi:</h2>
-          <p>{props.data.income} RSD</p>
+          <p className={classes.income}>{props.data.income} RSD</p>
         </div>
         <div>
           <h2 className={classes.heading}>Rashodi:</h2>
-          <p>{props.data.expenses} RSD</p>
+          <p className={classes.expense}>{props.data.expenses} RSD</p>
         </div>
       </div>
     </div>
