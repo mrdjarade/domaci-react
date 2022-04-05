@@ -1,3 +1,7 @@
+* {
+  text-decoration: none;
+}
+
 .nav {
   background-color: rgb(244, 253, 248);
   width: 100%;
@@ -22,6 +26,14 @@
   border-bottom: 2px solid transparent;
 }
 
+.nav ul li:hover {
+  border-bottom: 2px solid rgb(0, 100, 83);
+}
+
 .active {
   border-bottom: 2px solid rgb(0, 100, 83);
+}
+
+.link {
+  color: black;
 }
