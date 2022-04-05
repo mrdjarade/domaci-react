@@ -1,0 +1,22 @@
+.balance-container {
+  width: 50%;
+  margin: 30px 25%;
+  background-color: white;
+  padding: 30px;
+}
+
+.heading {
+  font-weight: 400;
+  margin: 0;
+}
+
+.balance-container--cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px 0 80px;
+}
+
+.balance-container--cards > div > p {
+  font-size: 25px;
+  margin: 0;
+}
