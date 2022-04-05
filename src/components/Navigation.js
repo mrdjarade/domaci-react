@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <nav className={classes.nav}>
       <ul>
-        <li>POČETNA</li>
+        <li className={classes.active}>POČETNA</li>
         <li>STANJE</li>
         <li>ISTORIJA</li>
         <li>DODAJ</li>
