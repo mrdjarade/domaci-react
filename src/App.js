@@ -11,7 +11,11 @@ function App() {
           <Redirect to='/pocetna'></Redirect>
         </Route>
         <Route path='/pocetna'>
-          <h1>Pocetna strana</h1>
+          <h1 className={classes.naslov}>Dobrodošli</h1>
+          <p className={classes.paragraf}>
+            Aplikacija za jednostavno praćenje troškova kreirana za potrebe
+            domaćeg zadatka na predmetu Internet tehnologije.
+          </p>
         </Route>
         <Route path='/stanje'>
           <h1>Stanje</h1>
