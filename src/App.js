@@ -1,8 +1,26 @@
 import classes from "./App.module.css";
 import Navigation from "./components/Navigation";
 import { Route, Redirect, Switch } from "react-router-dom";
+import Balance from "./components/Balance/Balance";
+import History from "./components/History/History";
+import Form from "./components/Form/Form";
+
+const data = {
+  items: [{ name: "Plata", amount: 100000 }],
+  income: 100000,
+  expenses: 0,
+};
 
 function App() {
+  const addItemHandler = (i) => {
+    data.items.unshift(i);
+    if (i.amount > 0) {
+      data.income += +i.amount;
+    } else {
+      data.expenses += Number(i.amount);
+    }
+  };
+
   return (
     <div className={classes["app-container"]}>
       <Navigation></Navigation>
@@ -18,13 +36,13 @@ function App() {
           </p>
         </Route>
         <Route path='/stanje'>
-          <h1>Stanje</h1>
+          <Balance data={data} />
         </Route>
         <Route path='/istorija'>
-          <h1>Istorija</h1>
+          <History data={data} />
         </Route>
         <Route path='/dodaj'>
-          <h1>Dodaj</h1>
+          <Form addItem={addItemHandler} />
         </Route>
       </Switch>
     </div>
